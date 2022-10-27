@@ -1,0 +1,172 @@
+/* configuracion global */
+/* declarar unas constantes en colores y fuentes */
+/* wl root es la raiz de todo, para hacer las configuraciones repetitivas */
+
+:root{
+    /* fuentes */
+    --titulos:'Indie Flower', 'Roboto';
+    --parrafo:'Macondo','sans-serif';
+    /* colores base */
+    --encabezado: rgb(255, 209, 6);
+    --pie: rgb(0, 0, 0);
+    --enlaceSobre: rgb(0, 59, 234);
+    
+}
+
+/* titulos */
+h1,h2,h3,h3,h4,h5,h6{
+    /* fuente */
+    font-family: var(--titulos);
+    text-align: center;
+}
+
+/* editar desbordamiento   */
+/* el asterisco es el selector universal */
+*{
+   box-sizing: border-box;
+}
+
+/* utilizar un selector de clase (.) y su nombre que hace referencia
+a una clase en el html */
+.home-wrapper{
+    background-image: url(../images/background.jpg)
+ 
+    
+}
+
+/* encabezado */
+header{
+    width: 100%;
+    /* posicion fija */
+    position: fixed;
+    background-color: var(--encabezado);
+    padding-top: 5px;
+    padding-bottom: 40px;
+}
+
+header img {
+    width: 200px;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+/* menu  */
+header nav a{
+       color: var(--enlace); 
+       font-family: var(--parrafo);
+       text-decoration: none;
+       font-weight: bold;
+       margin-left: 5px;
+       padding: 5px 5px;
+       font-size: 15px;
+}
+
+header nav a:hover{
+
+    color: var(--enlaceSobre);
+}
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Identificador en css es (#) */
+#home{
+    padding: 150px 0 260px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+#home h1{
+  color: rgb(0, 0, 0);  
+  font-weight: bold;
+  font-size: 4rem;
+  margin-bottom: 40px;
+}
+
+#home p{
+   font-family: var(--parrafo);
+   margin-top: 40px;
+   font-weight: bold;
+   font-size: 1.5rem;
+}
+/* seccion novedades */
+
+#novedades .box{
+    display: inline-block;
+    width: 33%;   /*para dividir el ancho en tres*/
+    padding: 20px;
+    
+}
+
+
+#novedades .box p{
+    text-align: justify;
+}
+
+#novedades .box img{
+    padding-left: 20%;
+    padding-bottom: 25px;
+}
+
+#novedades .box h3{
+    padding-top: 20px;
+}
+
+
+/* seccion categoria */
+
+section{
+    padding-top: 50px;
+}
+
+#categoria .box{
+    display: inline-block;
+    width: 33%;
+    padding: 15px;
+}
+
+#categoria .box img{
+        width: 100%;
+}
+
+/* seccion de contacto */
+#contacto{
+    width: 100%;
+    background-image: url(../images/map-image.png);
+    background-color: black;
+    background-size: cover;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+
+#contacto h2{
+    color: aliceblue;
+}
+
+#contacto input,
+select,textarea{
+    width: 600px;
+    padding: 10px 5px;
+    font-family: var(--parrafo);
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+/* footer */
+footer{
+background-color: black;
+width: 100%;
+color: aliceblue;
+font-size: 20px;
+
+}
